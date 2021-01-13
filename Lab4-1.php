@@ -7,12 +7,12 @@ $y = "200";
 $z = '300';
 $add = $x + $y;
 $sub = $z - $y;
-$K = $x * $z;
+$K = $y * $z;
 $H = $K / $z;
 $messageadd = "ผลบวก ".$x."+".$y." = ".$add;
 $messagesub = "ผลลบ ".$z."-".$x." = ".$sub;
 $messageK = "ผลคูณ ".$y."*".$z." = ".$K;
-$messageH = "ผลบวก ".$K."%".$z." = ".$H;
+$messageH = "ผลบวก ".$K."/".$z." = ".$H;
 
 echo $messageadd;  echo "<br />";
 echo $messagesub;  echo "<br />";
