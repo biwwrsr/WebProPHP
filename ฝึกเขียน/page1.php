@@ -1,14 +1,21 @@
 <html>
 <head>
-<title>หน้า1</title>
+<title>ทดลองกล่องข้อความ</title>
 </head>
 <body>
 <center>
     <?php
-        echo "<img src='check.png' ", "width=120,height=100 /><br>";
-        echo "<h1>ลงทะเบียนเรียบร้อยแล้ว</h1><br>";
-        echo "<a href='testbox.php'>กลับ</a>";
+        echo "<img src='cat.png' ", "width=120,height=110 /><br>";
+        echo "ชื่อ :";
+        echo " <input type=text name=user><br>";
+        echo "นามสกุล :";
+        echo " <input type=text name=user><br>";
+        echo "E-mail : ";
+        echo " <input type=text name=user><br>";
+        echo "Password :";
+        echo " <input type=text name=user><br>";
+        echo "<a href='page2.php'> ต่อไป</a>";
     ?>
-    </center>
+</center> 
 </body>
 </html>
