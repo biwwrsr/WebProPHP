@@ -85,18 +85,6 @@
         <th style="width:50px; " <table  border=0.5 align="center" bgcolor ="hotpink">F</th>
         <td colspan=13 bgcolor="lightgray"> </td>
 
-  
-
-
-    
-    
-
-
-    
-
-
-
-
 </center> 
 
 </body>
