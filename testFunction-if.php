@@ -17,22 +17,22 @@ else if($operator ==  "/"){
 function plus(){
     global $x;
     global $y;
-    echo "x + y = ";echo $x+$y; echo "<br>"; 
+    echo $x+$y;
 };
 function sub(){
     global $x;
     global $y;
-    echo "x - y = ";echo $x-$y; echo "<br>"; 
+    echo $x-$y; 
 };
 function mul(){
     global $x;
     global $y;
-    echo "x * y = ";echo $x*$y; echo "<br>"; 
+   echo $x*$y; 
 };
 function div(){
     global $x;
     global $y;
-    echo "x / y = ";echo $x/$y; echo "<br>"; 
+    echo $x/$y; 
 };
 
 ?>
