@@ -15,7 +15,7 @@
 <?php
 $width = @$_POST['width'] ;
 $height = @$_POST['height'];
-definer("n",0.5);
+
 
 echo "สี่หลี่ยมนี้มีพื้นที่ ".$width*$height." ตารางเซนติเมตรค่ะ";
  ?>
