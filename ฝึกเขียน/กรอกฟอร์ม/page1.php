@@ -2,8 +2,8 @@
 <html>  
 <center>
     <body>
+    <img src='cat.png' width=120 height=140> <br>
     <form action="page2.php" method="get">
-    <br><br><br><br><br><br><br><br><br><br>
     <b><font size="6">ลงทะเบียน</font></b><br><br>
         ชื่อ : <input type="text" name="name" ><br>
         นามสกุล : <input type="text" name="lastname" ><br>
