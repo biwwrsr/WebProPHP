@@ -1,34 +1,29 @@
-<html>
-<head>
-<title>ทดลองกล่องข้อความ</title>
-</head>
-<body>
+<!DOCTYPE HTML>
+<html>  
 <center>
-    <?php
-        echo "<b>แบบฟอร์มบันทึกข้อมูล</b><br />";
-        echo "<img src='cat.png' ", "width=120,height=110 /><br>";
-        echo "ชื่อ : <input type=text ><br>";
-        echo "นามสกุล : <input type=text ><br>";
-        echo "<form>
+    <body>
+    <form action="page2.php" method="get">
+    <br><br><br><br><br><br><br><br><br><br>
+    <b><font size="6">ลงทะเบียน</font></b><br><br>
+        ชื่อ : <input type="text" name="name" ><br>
+        นามสกุล : <input type="text" name="lastname" ><br>
         วุฒิการศึกษา :
         <select>
         <option>ประถมศึกษา
         <option>มัธยมศึกษา
         <option>ปริญญาตรี
         <option>สูงกว่าปริญญาตรี
-        </select>
-        </form>";
-        echo "E-mail : <input type=text ><br>";
-        echo "Password : <input type=password ><br>";
-        echo "เพศ : <input type=radio name=sex value=1 /> ชาย
-            <input type=radio name=sex value=2 /> หญิง <br />";
-        echo "งานอดิเรก :
+        </select><br>
+        E-mail : <input type=text ><br>
+        Password : <input type=password ><br>
+        เพศ : <input type=radio name=sex value=1 /> ชาย
+               <input type=radio name=sex value=2 /> หญิง <br />
+        งานอดิเรก :
         <input type=checkbox value=1 /> อ่านหนังสือ
         <input type=checkbox value=2 /> ดูโทรทัศน์
-        <input type=checkbox value=3 /> เล่นกีฬา<br />";
-        echo "<a href='page2.php'> <input type=button value=submit></a>";
-        
-    ?>
-</center> 
-</body>
+        <input type=checkbox value=3 /> เล่นกีฬา<br />
+        <input type="submit"  value ="ไป">
+    </form>
+    </body>
+</center>
 </html>

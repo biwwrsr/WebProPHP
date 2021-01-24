@@ -1,14 +1,15 @@
 <html>
-<head>
-<title>หน้า1</title>
-</head>
-<body>
 <center>
+<body>
     <?php
-        echo "<img src='check.png' ", "width=120,height=100 /><br>";
-        echo "<h1>ลงทะเบียนเรียบร้อยแล้ว</h1><br>";
+        $name = $_GET["name"];
+        $lastname = $_GET["lastname"];
+        echo "<img src='check.png' width=120 height=100 /><br>";
+        echo "<b><font size='6'>ยินดีต้องรับ</b><br>";
+        echo "<b>คุณ ".$name." ".$lastname."</b><br>";
+        echo "<b>ลงทะเบียนเรียบร้อยแล้ว</b></font><br>";
         echo "<a href='page1.php'>กลับ</a>";
     ?>
-    </center>
 </body>
+</center>
 </html>
