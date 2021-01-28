@@ -16,6 +16,7 @@
               $homework = $_GET['homework'];
               $total = $final+$midterm+$assign+$homework;
               $grade = "F";
+
               if($total <= 49){
                 $grade = "F";
               }
@@ -39,6 +40,9 @@
               }
               else if($total >= 80 && $total <= 100){
                 $grade = "A";
+              }
+              else{
+                $grade = "<font color = red>The grade cannot be calculated.</font>";
               }
             }
         ?>
