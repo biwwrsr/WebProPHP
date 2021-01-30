@@ -479,9 +479,7 @@
             echo number_format($GPA, 2, '.', '');
             echo "<br>";
             echo "<input type=submit name=reset value=Reset />";
-
-            }
-
+        }
     ?>
 </center>
 </body>

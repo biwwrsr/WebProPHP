@@ -95,7 +95,6 @@
 /*num3*/            echo "Num 3 : <input type=text name=number3 value=$number3><br><br>";
 
                     echo "<input type=submit name=submit value=Submit />";
-
                 } 
 /*input*/       else {
                     echo "Num 1 : <input type=text name=number1  /> <br><br>";

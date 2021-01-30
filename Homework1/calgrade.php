@@ -56,8 +56,6 @@
                     echo "Homework : ".$homework."<br>";
                     echo "Total Score = ".$total."<br>";
                     echo "Your Grade is : ".$grade."<br>";
-
-
                 }
                 else {
                     echo "<h2>Final(0-30) : <input type=number name=final  /> <br><br>";

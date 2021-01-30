@@ -59,22 +59,21 @@
         <br>
 
         <?php
-
-        if (isset($_GET['submit'])) {
-            if ($choice == 3) {
-                echo "Average = ";
-                echo $num1 + $num2 + $num3;
+            if (isset($_GET['submit'])) {
+                if ($choice == 3) {
+                    echo "Average = ";
+                    echo $num1 + $num2 + $num3;
+                }
+                if ($choice == 2) {
+                    echo "Maximum number = ";
+                    echo(max($num1,$num2,$num3));
+                }
+                if ($choice == 1) {
+                    echo "Minimum number = ";
+                    echo(min($num1,$num2,$num3));
+                }
+                
             }
-            if ($choice == 2) {
-                echo "Maximum number = ";
-                echo(max($num1,$num2,$num3));
-            }
-            if ($choice == 1) {
-                echo "Minimum number = ";
-                echo(min($num1,$num2,$num3));
-            }
-            
-        }
         ?>
 
 </body>
