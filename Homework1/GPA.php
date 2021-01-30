@@ -6,6 +6,12 @@
 <body>
 <center>
 <h1>Cal GPA<br></h1>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชา&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;หน่วยกิต&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;เกรด</h3>
+
 <?php
     if (isset($_GET['submit'])) {
         $obj1 = $_GET['obj1'];
@@ -219,7 +225,8 @@
 <form>
     <?php
         if (isset($_GET['submit'])) {
-    /*วิชาที่1*/   echo "วิชาที่ 1 <input type = text name = obj1 value = $obj1>";
+    /*วิชาที่1*/   echo "<h2>1. <input type = text name = obj1 value = $obj1>";
+                echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
                 //หน่วยกิต
                 
                 if($credit1 == '1'){
@@ -232,34 +239,34 @@
                     echo "<select name = credit1 ><option value=3 cheack>3</select>";
                 }
                 //เกรด
-                
+                echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
                 if ($grade1 == '1'){
-                    echo "<select name = grade2 > <option value=1 cheack >A</select><br>";
+                    echo "<select name = grade2 > <option value=1 cheack >A </select><br>";
                 }
                 if ($grade1 == '2'){
                     echo "<select name = grade2 > <option value=2 cheack >B+</select><br>";
                 }
                 if ($grade1 == '3'){
-                    echo "<select name = grade2 > <option value=3 cheack >B</select><br>";
+                    echo "<select name = grade2 > <option value=3 cheack >B </select><br>";
                 }
                 if ($grade1 == '4'){
                     echo "<select name = grade2 > <option value=4 cheack >C+</select><br>";
                 }
                 if ($grade1 == '5'){
-                    echo "<select name = grade2 > <option value=5 cheack >C</select><br>";
+                    echo "<select name = grade2 > <option value=5 cheack >C </select><br>";
                 }
                 if ($grade1 == '6'){
                     echo "<select name = grade2 > <option value=6 cheack >D+</select><br>";
                 }
                 if ($grade1 == '7'){
-                    echo "<select name = grade2 > <option value=7 cheack >D</select><br>";
+                    echo "<select name = grade2 > <option value=7 cheack >D </select><br>";
                 }
                 if ($grade1 == '8'){
-                    echo "<select name = grade2 > <option value=8 cheack >F</select><br>";
+                    echo "<select name = grade2 > <option value=8 cheack >F </select><br>";
                 }
-    /*วิชาที่2*/   echo "วิชาที่ 2 <input type = text name = obj1 value = $obj2>";
+    /*วิชาที่2*/   echo "2. <input type = text name = obj1 value = $obj2>";
                 //หน่วยกิต
-                
+                echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
                 if($credit2 == '1'){
                     echo "<select name = credit2 ><option value=1 cheack>1</select>";
                 }
@@ -270,34 +277,34 @@
                     echo "<select name = credit2 ><option value=3 cheack>3</select>";
                 }
                 //เกรด
-                
+                echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
                 if ($grade2 == '1'){
-                    echo "<select name = grade2 > <option value=1 cheack >A</select><br>";
+                    echo "<select name = grade2 > <option value=1 cheack >A </select><br>";
                 }
                 if ($grade2 == '2'){
                     echo "<select name = grade2 > <option value=2 cheack >B+</select><br>";
                 }
                 if ($grade2 == '3'){
-                    echo "<select name = grade2 > <option value=3 cheack >B</select><br>";
+                    echo "<select name = grade2 > <option value=3 cheack >B </select><br>";
                 }
                 if ($grade2 == '4'){
                     echo "<select name = grade2 > <option value=4 cheack >C+</select><br>";
                 }
                 if ($grade2 == '5'){
-                    echo "<select name = grade2 > <option value=5 cheack >C</select><br>";
+                    echo "<select name = grade2 > <option value=5 cheack >C </select><br>";
                 }
                 if ($grade2 == '6'){
                     echo "<select name = grade2 > <option value=6 cheack >D+</select><br>";
                 }
                 if ($grade2 == '7'){
-                    echo "<select name = grade2 > <option value=7 cheack >D</select><br>";
+                    echo "<select name = grade2 > <option value=7 cheack >D </select><br>";
                 }
                 if ($grade2 == '8'){
                     echo "<select name = grade2 > <option value=8 cheack >F</select><br>";
                 }
-    /*วิชาที่3*/   echo "วิชาที่ 3 <input type = text name = obj1 value = $obj3>";
+    /*วิชาที่3*/   echo "3. <input type = text name = obj1 value = $obj3>";
                 //หน่วยกิต
-               
+                echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
                 if($credit3 == '1'){
                     echo "<select name = credit3 ><option value=1 cheack>1</select>";
                 }
@@ -308,37 +315,34 @@
                     echo "<select name = credit3 ><option value=3 cheack>3</select>";
                 }
                 //เกรด
-                
+                echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
                 if ($grade3 == '1'){
-                    echo "<select name = grade3 > <option value=1 cheack >A</select><br>";
+                    echo "<select name = grade3 > <option value=1 cheack >A </select><br>";
                 }
                 if ($grade3 == '2'){
                     echo "<select name = grade3 > <option value=2 cheack >B+</select><br>";
                 }
                 if ($grade3 == '3'){
-                    echo "<select name = grade3 > <option value=3 cheack >B</select><br>";
+                    echo "<select name = grade3 > <option value=3 cheack >B </select><br>";
                 }
                 if ($grade3 == '4'){
                     echo "<select name = grade3 > <option value=4 cheack >C+</select><br>";
                 }
                 if ($grade3 == '5'){
-                    echo "<select name = grade3 > <option value=5 cheack >C</select><br>";
+                    echo "<select name = grade3 > <option value=5 cheack >C </select><br>";
                 }
                 if ($grade3 == '6'){
                     echo "<select name = grade3 > <option value=6 cheack >D+</select><br>";
                 }
                 if ($grade3 == '7'){
-                    echo "<select name = grade3 > <option value=7 cheack >D</select><br>";
+                    echo "<select name = grade3 > <option value=7 cheack >D </select><br>";
                 }
                 if ($grade3 == '8'){
-                    echo "<select name = grade3 > <option value=8 cheack >F</select><br>";
+                    echo "<select name = grade3 > <option value=8 cheack >F </select><br>";
                 }
-    /*วิชาที่4*/   echo "วิชาที่ 4 <input type = text name = obj1 value = $obj4>";
+    /*วิชาที่4*/   echo "4. <input type = text name = obj1 value = $obj4>";
                 //หน่วยกิต
-                if($credit4 == '0'){
-                    echo "<select name = credit4 ><option value=0>หน่วยกิต 
-                    <option value=1>1<option value=2>2<option value=3>3</select>";
-                }
+                echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
                 if($credit4 == '1'){
                     echo "<select name = credit4 ><option value=1 cheack>1</select>";
                 }
@@ -349,38 +353,34 @@
                     echo "<select name = credit4 ><option value=3 cheack>3</select>";
                 }
                 //เกรด
-                if ($grade4 == '0'){
-                    echo "<select name = grade4 ><option value=0>เกรด 
-                    <option value=1>A<option value=2>B+<option value=3>B<option value=4>C+
-                    <option value=5>C<option value=6>D+<option value=7>D<option value=8>F</select><br>";
-                }
+                echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
                 if ($grade4 == '1'){
-                    echo "<select name = grade4 > <option value=1 cheack >A</select><br>";
+                    echo "<select name = grade4 > <option value=1 cheack >A </select><br>";
                 }
                 if ($grade4 == '2'){
                     echo "<select name = grade4 > <option value=2 cheack >B+</select><br>";
                 }
                 if ($grade4 == '3'){
-                    echo "<select name = grade4 > <option value=3 cheack >B</select><br>";
+                    echo "<select name = grade4 > <option value=3 cheack >B </select><br>";
                 }
                 if ($grade4 == '4'){
                     echo "<select name = grade4 > <option value=4 cheack >C+</select><br>";
                 }
                 if ($grade4 == '5'){
-                    echo "<select name = grade4 > <option value=5 cheack >C</select><br>";
+                    echo "<select name = grade4 > <option value=5 cheack >C </select><br>";
                 }
                 if ($grade4 == '6'){
                     echo "<select name = grade4 > <option value=6 cheack >D+</select><br>";
                 }
                 if ($grade4 == '7'){
-                    echo "<select name = grade4 > <option value=7 cheack >D</select><br>";
+                    echo "<select name = grade4 > <option value=7 cheack >D </select><br>";
                 }
                 if ($grade4 == '8'){
-                    echo "<select name = grade4 > <option value=8 cheack >F</select><br>";
+                    echo "<select name = grade4 > <option value=8 cheack >F </select><br>";
                 }
-    /*วิชาที่5*/   echo "วิชาที่ 5 <input type = text name = obj1 value = $obj5>";
+    /*วิชาที่5*/   echo "5. <input type = text name = obj1 value = $obj5>";
                 //หน่วยกิต
-               
+                echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
                 if($credit5 == '1'){
                     echo "<select name = credit5 ><option value=1 cheack>1</select>";
                 }
@@ -391,80 +391,95 @@
                     echo "<select name = credit5 ><option value=3 cheack>3</select>";
                 }
                 //เกรด
-               
+                echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
                 if ($grade5 == '1'){
-                    echo "<select name = grade5 > <option value=1 cheack >A</select><br>";
+                    echo "<select name = grade5 > <option value=1 cheack >A </select><br>";
                 }
                 if ($grade5 == '2'){
                     echo "<select name = grade5 > <option value=2 cheack >B+</select><br>";
                 }
                 if ($grade5 == '3'){
-                    echo "<select name = grade5 > <option value=3 cheack >B</select><br>";
+                    echo "<select name = grade5 > <option value=3 cheack >B </select><br>";
                 }
                 if ($grade5 == '4'){
                     echo "<select name = grade5 > <option value=4 cheack >C+</select><br>";
                 }
                 if ($grade5 == '5'){
-                    echo "<select name = grade5 > <option value=5 cheack >C</select><br>";
+                    echo "<select name = grade5 > <option value=5 cheack >C </select><br>";
                 }
                 if ($grade5 == '6'){
                     echo "<select name = grade5 > <option value=6 cheack >D+</select><br>";
                 }
                 if ($grade5 == '7'){
-                    echo "<select name = grade5 > <option value=7 cheack >D</select><br>";
+                    echo "<select name = grade5 > <option value=7 cheack >D </select><br>";
                 }
                 if ($grade5 == '8'){
-                    echo "<select name = grade5 > <option value=8 cheack >F</select><br>";
+                    echo "<select name = grade5 > <option value=8 cheack >F </select></h2><br>";
                 }
         }
         else {
-        echo "<h2>วิชาที่ 1 <input type =text name = obj1>";
+        echo "<h2>1. <input type =text name = obj1>";
+        echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
         echo "<select name = credit1 >
         <option value=1>1<option value=2>2<option value=3>3</select>";
+        echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
         echo "<select name = grade1 >
         <option value=1>A<option value=2>B+<option value=3>B<option value=4>C+
         <option value=5>C<option value=6>D<option value=7>D+<option value=8>F</select><br>";
 
-        echo "วิชาที่ 2 <input type = text name = obj2>";
+        echo "2. <input type = text name = obj2>";
+        echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
         echo "<select name = credit2 > 
         <option value=1>1<option value=2>2<option value=3>3</select>";
+        echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
         echo "<select name = grade2 > 
         <option value=1>A<option value=2>B+<option value=3>B<option value=4>C+
         <option value=5>C<option value=6>D<option value=7>D+<option value=8>F</select><br>";
 
-        echo "วิชาที่ 3 <input type = text name = obj3>";
+        echo "3. <input type = text name = obj3>";
+        echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
         echo "<select name = credit3 >
         <option value=1>1<option value=2>2<option value=3>3</select>";
+        echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
         echo "<select name = grade3 >
         <option value=1>A<option value=2>B+<option value=3>B<option value=4>C+
         <option value=5>C<option value=6>D<option value=7>D+<option value=8>F</select><br>";
 
-        echo "วิชาที่ 4 <input type = text name = obj4>";
+        echo "4. <input type = text name = obj4>";
+        echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
         echo "<select name = credit4 > 
         <option value=1>1<option value=2>2<option value=3>3</select>";
+        echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
         echo "<select name = grade4 > 
         <option value=1>A<option value=2>B+<option value=3>B<option value=4>C+
         <option value=5>C<option value=6>D<option value=7>D+<option value=8>F</select><br>";
 
-        echo "วิชาที่ 5 <input type = text name = obj5>";
+        echo "5. <input type = text name = obj5>";
+        echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
         echo "<select name = credit5 > 
         <option value=1>1<option value=2>2<option value=3>3</select>";
+        echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
         echo "<select name = grade5 >
         <option value=1>A<option value=2>B+<option value=3>B<option value=4>C+
-        <option value=5>C<option value=6>D<option value=7>D+<option value=8>F</select><br>";
+        <option value=5>C<option value=6>D<option value=7>D+<option value=8>F</select><br><br>";
 
         echo "<input type=submit name=submit value=Submit />";
         }
     
     ?>
 </form>
+
     <?php
         if (isset($_GET['submit'])) {   
             $totalgrade = ($numcredit1*$numgrade1)+($numcredit2*$numgrade2)+($numcredit3*$numgrade3)+($numcredit4*$numgrade4)+($numcredit5*$numgrade5);
             $totalcredit = $numcredit1+$numcredit2+$numcredit3+$numcredit4+$numcredit5;
             $GPA = $totalgrade/$totalcredit;
+            echo  "<br>";
             echo "GPA = ";
             echo number_format($GPA, 2, '.', '');
+            echo "<br>";
+            echo "<input type=submit name=reset value=Reset />";
+
             }
 
     ?>
