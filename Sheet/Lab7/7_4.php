@@ -5,7 +5,7 @@
 </head>
 
 <body>
-    <form method="get" action="ch7-4cal.php">
+    <form method="get" action="7_4.php">
         <table border="1" align="center" width="500">
             <tr>
                 <td colspan="2" align="center">
