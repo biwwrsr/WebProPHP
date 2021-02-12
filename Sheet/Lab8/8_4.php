@@ -34,5 +34,3 @@ function show_checker( $maxRow, $maxCol, $bgcolor1, $bgcolor2) {
 page_header("Example 8-4", "FFDDEE");
 show_checker(5, 5,"33ff99","ffff99");
 page_footer("Thank You.");
-
-?>
