@@ -471,7 +471,8 @@
 
     <?php
         if (isset($_GET['submit'])) {   
-            $totalgrade = ($numcredit1*$numgrade1)+($numcredit2*$numgrade2)+($numcredit3*$numgrade3)+($numcredit4*$numgrade4)+($numcredit5*$numgrade5);
+            $totalgrade = ($numcredit1*$numgrade1)+($numcredit2*$numgrade2)+
+            ($numcredit3*$numgrade3)+($numcredit4*$numgrade4)+($numcredit5*$numgrade5);
             $totalcredit = $numcredit1+$numcredit2+$numcredit3+$numcredit4+$numcredit5;
             $GPA = $totalgrade/$totalcredit;
             echo  "<br>";
@@ -484,3 +485,4 @@
 </center>
 </body>
 </html>
+
