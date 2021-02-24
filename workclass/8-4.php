@@ -7,7 +7,7 @@
 </head>
 <body>
 <center>
-    <form method="get" action="Lab8-4.php">
+    <form method="get" action="8-4.php">
         row : <input type="number" name = "maxRow"><br>
         Column : <input type="number" name = "maxCol"><br>
         Start Num : <input type="number" name = "SN"><br>
@@ -97,3 +97,4 @@
     page_footer("Thank You.");
     }
 ?>
+

@@ -23,8 +23,7 @@
             if ($check) {
                 if($char == " ")$char = 'space';
                 echo ''.$char . ': Ascii = ' . ord($char) . ' <br> ';
-            }
-            
+            } 
         }
     }
     function show_form()
@@ -49,3 +48,4 @@
 </body>
 
 </html>
+

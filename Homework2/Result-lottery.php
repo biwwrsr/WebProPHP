@@ -25,9 +25,9 @@
         echo "<form method='get' action='lottery.php'>";
         echo "<button type='submit'>back</button>";
         echo "</form>";
-        
         echo "<br>รางวัล เลขที่ออก คือ : ". $random ;
     }
     ?>
 </body>
 </html>
+

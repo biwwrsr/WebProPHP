@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<!-- ชื่อไฟล์ : Exam06-11.php -->
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title> ตัวอย่าง Control statement ที่ 11 </title>
@@ -36,5 +34,5 @@
         </table>
     </form>
 </body>
-
 </html>
+

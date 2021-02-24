@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title> ตัวอย่าง Control statement ที่ 12 </title>
@@ -30,5 +29,4 @@
         </table>
     </form>
 </body>
-
 </html>

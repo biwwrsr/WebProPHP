@@ -25,7 +25,8 @@
                 }
                 echo "</tr>";
             }
-            echo '</table>';
+            echo '</table><br>';
+
             $check = 0;
             $time = 0;
             do{
@@ -67,6 +68,7 @@
             foreach ($number as $value) {
                 echo '<input type="hidden" name="result[]" value="' . $value . '">';
             }
+            echo "<br>";
             echo '<input type="submit"  name=submit value="Start Game"/>';
             echo '</form>';
         }
@@ -74,3 +76,6 @@
 </body>
 
 </html>
+
+
+

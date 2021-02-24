@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title> ตัวอย่าง Control statement ที่ 9 </title>
 </head>
 </head>
-
 <body>
     <form>
         start num : <input type="text" name="name1"> <br>
@@ -31,5 +29,5 @@
     }
     ?>
 </body>
-
 </html>
+

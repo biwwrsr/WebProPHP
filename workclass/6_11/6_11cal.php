@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title> โปรแกรมค านวณเกรด </title>
 </head>
-
 <body>
     <?php
     $hw = $_GET['hw'];
@@ -31,7 +29,10 @@
     echo "<br>";
     echo "<a href='6_11.php'> <big>Back </big></a>";
     ?>
-
 </body>
-
 </html>
+
+
+
+
+
