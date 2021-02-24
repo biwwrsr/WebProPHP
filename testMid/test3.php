@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
+<center>
 <body>
     <?php
     function checkNum($start, $stop, $div)
@@ -59,5 +59,6 @@
     }
     ?>
 </body>
+</center>
 
 </html>
