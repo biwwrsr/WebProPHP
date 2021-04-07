@@ -1,46 +1,43 @@
-<?php 
+<?php
     session_start();
-    include('server.php')
+    $message="";
+    $hostname = "localhost";
+    $username = "root";
+    $password = "12345";
+    $dbname = "itbook";
+    if(count($_POST)>0) {
+        $con = new mysqli($hostname, $username, $password, $dbname);
+        $result = mysqli_query($con,"SELECT * FROM login_user
+                WHERE user_name='" . $_POST["user_name"] . "'
+                and password = '". $_POST["password"]."'");
+        $row = mysqli_fetch_array($result);
+        if(is_array($row)) {
+            $_SESSION["id"] = $row['id'];
+            $_SESSION["name"] = $row['name'];
+        } else {
+            $message = "Invalid Username or Password!";
+        }
+    }
+    if(isset($_SESSION["id"])) {
+    header("Location:index1.php");
+    }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-
-    <link rel="stylesheet" href="style.css">
+<title>User Login</title>
 </head>
 <body>
-    <div class="header">
-        <h2>Login</h2>
-    </div>
-
-    <form action="login_db.php" method="post">
-        <?php if(isset($_SESSION['error'])) : ?>
-            <div class="error">
-                <h3>
-                    <?php
-                        echo $_SESSION['error'];
-                        unset($_SESSION['error']);                    
-                    ?>
-                </h3>            
-            </div>
-        <?php endif ?>
-        <div class="input-group">
-            <label for="username">Username</label>
-            <input type="text" name="username">
+    <form name="frmUser" method="post" action="" align="center">
+        <div class="message"><?php if($message!="") { echo $message; } ?>
         </div>
-        <div class="input-group">
-            <label for="password">Password</label>
-            <input type="password" name="password">
-        </div>
-        <div class="input-group">
-            <button type="submit" name="login_user" class="btn">Login</button>
-        </div>
-        <p>Not yes a member? <a href="register.php">Sign up</a></p>
+        <h3 align="center">Enter Login Details</h3>Username:<br>
+        <input type="text" name="user_name"><br>Password:<br>
+        <input type="password" name="password">
+        <br><br>
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset">
     </form>
 </body>
 </html>
+
